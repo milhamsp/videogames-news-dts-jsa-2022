@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    /* background-color: #131417 !important; */
+    background: linear-gradient(270deg, #000000, #272727);
+    background-size: 400% 400%;
+
+    animation: bgAnimation 10s ease infinite;
+}
+@keyframes bgAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.container{
+    color:antiquewhite;
+}
+.bg-transparent{
+    background-color:transparent !important;
+}
+.dark-img{
+    filter:brightness(60%);
+}
+.card{
+    transition: transform .2s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.text-limit{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: whitesmoke;
+}
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+}
+.btn-hover:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-8 {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.btn-hover2{
+    opacity: 60%;
+}
+.btn-hover2:hover {
+    opacity: 100%;
+}
